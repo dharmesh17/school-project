@@ -1,0 +1,228 @@
+
+<!-- saved from url=(0166)file:///C:/Users/Ivan/Desktop/school%20project%20echo/online%20banking/passbook/CodePen%20-%20Responstable%202.0_%20a%20responsive%20table%20solution_files/jlAqp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+
+    <title>CodePen - Responstable 2.0: a responsive table solution</title>
+    
+    
+    <link rel="stylesheet" href="./normalize.css">
+
+    
+        <style>
+      /*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/
+.responstable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+h1 span {
+  color: #167F92;
+}
+
+    </style>
+
+    <script>
+  window.console = window.console || function(t) {};
+</script>
+
+    
+    
+  </head>
+
+  <body translate="no">
+
+    
+
+<table class="responstable">
+  
+  <tbody><tr>
+    <th>Date</th>
+    <th data-th="Driver details"><span>Particulars</span></th>
+    <th>witdrawal</th>
+    <th>Deposit</th>
+    <th>Balance</th>
+  </tr>
+  
+  <tr>
+    <td>21/05/2016</td>
+    <td>transection 1</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>22/05/2016</td>
+    <td>transection 2</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>25/05/2016</td>
+    <td>transection 3</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>26/05/2016</td>
+    <td>transection 4</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>26/05/2016</td>
+    <td>transection 5</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>26/05/2016</td>
+    <td>transection 6</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>26/05/2016</td>
+    <td>transection 7</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>26/05/2016</td>
+    <td>transection 8</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>26/05/2016</td>
+    <td>transection 9</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+  <tr>
+    <td>26/05/2016</td>
+    <td>transection 10</td>
+    <td>amount</td>
+    <td>amount</td>
+    <td>amount</td>
+  </tr>
+  
+</tbody></table>
+    
+    <script src="./respond.js"></script>
+
+    
+    
+    <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+    
+  
+
+ 
+</body></html>
